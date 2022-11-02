@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Gienoviere D">
+    <meta name="description" content="GameDev portfolio">
+    <meta name="Game Developer" content="Gienoviere D">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <title>My Game Dev Portfolio</title>
+    <script src="p2.js"></script>
+
+    <style>
+          ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          }
+      
+          li {
+          float: left;
+          border-right:1px solid #bbb;
+          }
+      
+          li:last-child {
+          border-right: none;
+          }
+      
+          li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          }
+      
+          li a:hover:not(.active) {
+          background-color: gold;
+          }
+      
+          .active {
+          background-color: red;
+          }
+      </style>
+  </head>
+
+  <body>
+    <div class="containerParent">
+      <div class="lightGray">
+        <ul>
+          <li><a href="index.html">Gienoviere</a></li>
+          <li><a href="resume/GameDev resume.pdf">resume</a></li>
+          <li><a href="project 1.html">Running into madness</a>
+            <li><a href="project 2.html">Race Game Pro</a></li>
+            <li><a class="active" href="#">RPG Game</a></li>
+         <!--<li><a href="game design.html">Game Design</a></li>
+                    <li><a href="game coding.html">Game Coding</a></li>-->
+          <li><a href="blender.html">Blender</a></li>
+          <li><a href="beats.html">Beat/video</a></li>
+          <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Hiring/Contact</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">UE info</a>
+              <div class="dropdown-content">
+                
+              </div>
+          </li>
+        </ul>
+
+      <video width="600" style="margin-top: 50px; margin-right: 60px; float: right;" controls>
+          <source src="RPG UE5/RPG - Unreal Editor 2022-09-07 16-04-42.mp4" type="video/mp4">
+          <source src="RPG UE5/ - Unreal Editor 2022-09-07 16-04-42.mp4" type="video/ogg">
+          Your browser does not support HTML video.
+      </video>
+
+        <!-- Container for the image gallery -->
+      <div class="container" style="width: 50%; height: 50%; margin-top: 20px; margin-left: 10px; ">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 5</div>
+            <img src="RPG UE5/Screenshot (227).png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 5</div>
+            <img src="RPG UE5/Screenshot (228).png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 5</div>
+            <img src="RPG UE5/Screenshot (229).png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 5</div>
+            <img src="RPG UE5/Screenshot (230).png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 5</div>
+            <img src="" style="width:100%">
+        </div>
+        
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="RPG UE5/Screenshot (227).png" style="width:100%" onclick="currentSlide(1)" alt="simultaneously working and learning to work with blueprint">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="RPG UE5/Screenshot (228).png" style="width:100%" onclick="currentSlide(2)" alt="This blueprint is for Meteor power ">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="RPG UE5/Screenshot (229).png" style="width:100%" onclick="currentSlide(3)" alt="positioning the camera for the player">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="RPG UE5/Screenshot (230).png" style="width:100%" onclick="currentSlide(4)" alt="trying out the option to switch pov mode, from 3rd person to 1st person">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(5)" alt="This game is my pride as that it will be my first RPG game that I exclusively will bring out on XBox Series X, This project is currently in progress">
+          </div>
+        </div>
+      </div> 
+      <button class="link1" style="float:right; margin-top:20px; margin-right: 60px; ">
+        <a href="https://www.youtube.com/playlist?list=PLVcVWC1bK3YV1y98Wa_DSv3ZzhDiQh480">Tutorial RPG UE5</a>
+      </button>  
+
+      <button class="link2" style="float:right; margin-top:20px; ">
+        <a href="https://www.unrealengine.com/en-US/">Unreal Engine Page</a>
+      </button>
+
+      <button class="link3" style="float:right; margin-top:20px;">
+        <a href="https://www.unrealengine.com/marketplace/en-US/store">UE5 market store</a>
+      </button>
+    </div>
+    <!-- Scrolling backgroung -->
+  <div class="container">
+    <div class="container-background">
+        <div class="sliding-background"></div>
+    </div>  
+  </div> 
+    
+
+</body>

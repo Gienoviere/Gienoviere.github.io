@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Gienoviere D">
+        <meta name="description" content="GameDev portfolio">
+        <meta name="Game Developer" content="Gienoviere D">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <title>My Game Dev Portfolio</title>
+        <script src="Main.js"></script>
+
+        <style>
+            ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+        
+            li {
+            float: left;
+            border-right:1px solid #bbb;
+            }
+        
+            li:last-child {
+            border-right: none;
+            }
+        
+            li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+        
+            li a:hover:not(.active) {
+            background-color: gold;
+            }
+        
+            .active {
+            background-color: #fb0404;
+            }
+
+            li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+            li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+            }
+
+            li.dropdown {
+            display: inline-block;
+            }
+
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+
+            .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+            .dropdown-content a:hover {background-color: #f1f1f1;}
+
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+        </style>
+      
+    </head>
+    <body>
+
+        <div class="containerParent">
+            <div class="lightGray"> 
+                <ul>
+                    <li><a class="active" href="index.html">Gienoviere</a></li>
+                    <li><a href="resume/GameDev resume.pdf">resume</a></li>
+                    <li><a href="project 1.html">Running into madness</a>
+                    <li><a href="project 2.html">Race Game Pro</a></li>
+                    <li><a href="project 3.html">RPG Game</a></li>
+                  <!--<li><a href="game design.html">Game Design</a></li>
+                    <li><a href="game coding.html">Game Coding</a></li>-->
+                    <li><a href="blender.html">Blender</a></li>
+                    <li><a href="beats.html">Beat/video</a></li>
+                    <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Hiring/Contact</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">My social Media</a>
+                        <div class="dropdown-content">
+                            <a href="https://www.youtube.com/channel/UC8DY3YnvjBtSi7p_TRhB7zA">Youtube</a>
+                            <a href="https://www.twitch.tv/ghetto_supastar10">Twitch</a>
+                            <a href="https://www.instagram.com/ghetto_supastar_/">Instagram</a>
+                            <a href="https://github.com/Gienoviere">Github</a>
+                        </div>
+                    </li>
+                </ul>
+                <img src="images/GameDev.jpg" width="400" height="350" style="float:right; margin-top: 20px; margin-right: 450px;">
+
+                <div style="font-style: georgia; color:goldenrod; float: right; margin-top:30px; margin-right: 200px;">
+                    I am a 23 black South American (American) man who is striving to be game developer/designer, <br> A jack of all trade master of both, I have been at it for 4 years and am currently studying to become Game Developer and want to get bachelor. <br> After that I will go to America to work there and live there.     
+                </div>
+                
+                <h1 style="color:red;">My Skills</h1>
+                <p>C#</p>
+                <div class="container2">
+                    <div class="skill C">80%</div>
+                </div>
+    
+                <p>C++</p>
+                <div class="container2">
+                    <div class="skill Cplus">10%</div>
+                </div>
+
+                <p>Unity</p>
+                <div class="container2">
+                    <div class="skill Unity">70%</div>
+                </div>
+
+                <p>UE5</p>
+                <div class="container2">
+                    <div class="skill UE5">20%</div>
+                </div>
+
+                <p>Blender</p>
+                <div class="container2">
+                    <div class="skill Blender">35%</div>
+                </div>
+
+                <p>FL Studio</p>
+                <div class="container2">
+                    <div class="skill FL">50%</div>
+                </div>
+
+                <p>HTML&CSS</p>
+                <div class="container2">
+                    <div class="skill HTML">70%</div>
+                </div>
+
+                <p>JavaScript</p>
+                <div class="container2">
+                    <div class="skill JavaScript">20%</div>
+                </div>
+                
+                <p>Problem Solving</p>
+                <div class="container2">
+                    <div class="skill Problem">70%</div>
+                </div>
+                    
+                <p>Passion</p>
+                <div class="container2">
+                    <div class="skill Passion">100%</div>
+                </div>
+
+                <p>Creativity</p>
+                <div class="container2">
+                    <div class="skill Creativity">80%</div>
+                </div>
+
+                
+
+            </div>
+
+            <!-- Scrolling backgroung -->
+            <div class="container">
+                <div class="container-background">
+                    <div class="sliding-background"></div>
+                </div>  
+            </div>  
+        </div> 
+    </body>
+</html>
