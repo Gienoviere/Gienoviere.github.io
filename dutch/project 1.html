@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Gienoviere D">
+        <meta name="description" content="GameDev portfolio">
+        <meta name="Game Developer" content="Gienoviere D">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <title>Mijn Game Dev Portfolio</title>
+
+        <style>
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        }
+
+        li {
+        float: left;
+        border-right:1px solid #bbb;
+        }
+
+        li:last-child {
+        border-right: none;
+        }
+
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+        background-color: gold;
+        }
+
+        .active {
+        background-color: red;
+        }
+        li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+        }
+
+        li.dropdown {
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+    }
+        </style>
+    </head>
+
+    <body>
+        <div class="containerParent">
+            <div class="lightGray">
+                <ul>
+                    <li><a href="index.html">Gienoviere</a></li>
+                    <li><a href="resume/GameDev resume - Copy.pdf">CV</a></li>
+                    <li><a class="active" href="#">Running into madness</a>
+                        <li><a href="project 2.html">Race Game Pro</a></li>
+                        <li><a href="project 3.html">RPG Game</a></li>
+                    <!--<li><a href="game design.html">Game Design</a></li>
+                    <li><a href="game coding.html">Game Coding</a></li>-->
+                    <li><a href="blender.html">Blender</a></li>
+                    <li><a href="beats.html">Beat/video</a></li>
+                    <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Hiring/Contact</a></li>
+                </ul>
+
+                <div class="runPic" style="float: left; margin-top: 30px;">
+                    <div>
+                        <img class="spacer" src="Running Game/RunningGame1.png" width="500" height="400"><br>
+                    </div>
+                    <div>
+                        <img class="spacer" src="Running Game/RunningGame2.png" width="500" height="400"><br>
+                    </div>
+                </div>
+                
+                <div class="VPage1" style="float: right; margin-top: 10px; margin-right: 130px;">
+                    <video width="320" height="240" controls>
+                        <source class="spacer" src="Running Game/RunningGame1.mp4" type="video/mp4">
+                        <source src="" type="video/ogg">
+                    </video>
+
+                    <video width="320" height="240" controls>
+                        <source class="spacer" src="Running Game/RunningGame3.mp4" type="video/mp4">
+                        <source src="" type="video/ogg">
+                    </video>
+                </div>
+                <div>
+                    <img class="spacer" src="Running Game/RunningGame4.png" width="300" height="300" style="margin-left: 260px;">
+                    <img class="spacer" src="Running Game/RunningGame5.png" width="300" height="300" style="margin-left: 0px;">
+                </div>
+
+                <Div class="textp1" style="float: right; margin-top: 0px; margin-right: 140px;">
+                    <p>dit spel is gemaakt als soloproject, <br> dat ik wilde maken omdat ik geïnspireerd was door Subway Surfer-spel dat ik altijd graag speelde. <br> Ik heb dit in Unity gemaakt en de meeste dingen op foto's en video's zijn gemaakt in bijna 1 week <br> ik heb een script geschreven dat eindeloos terrein genereert met behulp van C# op Visual Studio, <br> om het eindeloos te laten werken en tegelijkertijd bij te houden hoe lang je hebt gerend. <br> Ik gebruikte assets uit de winkel en gebruikte ook een youtube tutorial om het te leren maken. <br> En ook een beetje terreingereedschap gebruikt om er mijn versie van te maken. <br> Dit project was een succes, hoewel het enkele aanpassingen nodig heeft </p>
+                </Div>
+
+                <button class="link1" style="float:right; margin-right: 300px;">
+                    <a href="https://apps.apple.com/us/app/subway-surfers/id512939461">Subway Surfers</a>  
+                </button>
+
+                <button class="link2" style="float:right;"> 
+                    <a href="https://unity.com/">Unity</a>
+                </button>
+
+                <button class="link3" style="float:right;">
+                    <a href="https://assetstore.unity.com/">Winkel van Unity</a>
+                </button>
+
+            </div>
+                <!-- Scrolling backgroung -->
+            <div class="container">
+                <div class="container-background">
+                    <div class="sliding-background"></div>
+                </div>  
+            </div>  
+        </div>
+    </body>
+
+     
+
+
+</html>

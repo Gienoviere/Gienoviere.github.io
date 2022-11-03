@@ -1,0 +1,288 @@
+body{margin:0px;}
+
+.containerParent{
+  width:100%;
+  min-height: 1200px;
+  background-color:#272a31;
+/*   background-color:#34373f;  */
+/*   background-color: #171717; */
+/*   background-color: #484f5c; */
+  position: relative;
+}
+
+.lightGray{
+  width:100%;
+  height: 1000px;
+  
+/*   background : linear-gradient(to bottom, rgba(72,79,92,0) 0%, rgba(72,79,92,0.82) 50%, rgba(72,79,92,0.96) 83%, #484f5c 100%); */
+  
+/*   background : linear-gradient(to bottom, rgba(23,23,23,0) 0%, rgba(23,23,23,0.82) 50%, rgba(23,23,23,1) 95%,#171717 100%); */
+  
+/*   background : linear-gradient(to bottom, rgba(52,55,63,0.45) 0%, rgba(52,55,63,0.82) 50%, rgba(52,55,63,1) 95%,#34373f 100%); */
+  
+  background : linear-gradient(to bottom, rgba(39,42,49,0.5) 0%, rgba(39,42,49,0.82) 50%, rgba(39,42,49,1) 95%,#272a31 100%);
+  
+  position: absolute;
+  z-index: 2;
+}
+
+.container{
+  overflow: hidden;
+  height : 1000px;
+  width: 100%;
+  position: absolute;
+  background-color: #484f5c;
+  z-index: 1;
+}
+
+.container-background{
+  perspective:4000px;
+  margin-top:-3000px;
+/*   margin-left:-450px;   */
+  height : 4500px;  
+}
+
+.sliding-background{
+  height: 7500px;
+  width: 18500px; 
+  
+/*   background-image:url("https://i.ibb.co/7VMmT2r/BG-IMG-SRC.jpg"); */
+  
+  background-image:url("https://i.ibb.co/KWSkzb2/BG-Img.jpg"); 
+  background-repeat: repeat; 
+  animation: slide 70s linear infinite;
+  position: absolute;
+  left:-800px;
+}
+
+@keyframes slide {
+  0%{
+    transform: translate3d(0, 0px, 0) rotateX(45deg);
+  }
+  100%{
+    transform: translate3d(0, -1238px,  -1238px) rotateX(45deg);
+  }
+}
+/*background*/
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+/*slideshow*/
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  padding-top: 0px;
+  float: left;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display:none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+.spacer{
+  margin: 20px;
+}
+
+.Race{
+  float: right;
+  margin-top: 100px;
+  margin-right: 10px;
+}
+
+.textp2{
+  color: yellow;
+}
+
+.textp3{
+  background-image: url("/RPG UE5/UE5-lumen-nanite.png");
+  color: darkred;
+}
+
+p {
+  font-size: 20px;
+  color: gold;
+  
+}
+
+.container2 {
+  background-color: rgb(192, 192, 192);
+  width: 10%;
+  border-radius: 15px;
+}
+
+.skill {
+  background-color: rgb(243, 8, 8);
+  color: white;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.link1 {
+  background-color: goldenrod;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.link2 {
+  background-color: goldenrod;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.link3 {
+  background-color: goldenrod;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.color{
+  color: gold;
+}
+
+.C {
+  width: 80%;
+}
+
+.Cplus {
+  width: 10%;
+}
+
+.Unity {
+  width: 70%;
+}
+
+.UE5 {
+  width: 20%;
+}
+
+.Blender {
+  width: 35%;
+}
+
+.FL {
+  width: 50%;
+}
+
+.HTML {
+  width: 70%;
+}
+
+.JavaScript {
+  width: 20%;
+}
+
+.Problem {
+  width: 70%;
+}
+
+.Passion {
+  width: 100%;
+}
+
+.Creativity {
+  width: 80%;
+}
+
