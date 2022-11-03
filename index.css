@@ -127,7 +127,7 @@ body{margin:0px;}
 
 /* Container for image text */
 .caption-container {
-  text-align: center;
+  text-align:center;
   background-color: #222;
   padding: 2px 16px;
   color: white;
@@ -155,8 +155,6 @@ body{margin:0px;}
   opacity: 1;
 }
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-
-
 
 
 .spacer{
