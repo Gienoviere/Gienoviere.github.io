@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <style>
+            ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+        
+            li {
+            float: left;
+            border-right:1px solid #bbb;
+            }
+        
+            li:last-child {
+            border-right: none;
+            }
+        
+            li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+        
+            li a:hover:not(.active) {
+            background-color: gold;
+            }
+        
+            .active {
+            background-color: #fb0404;
+            }
+
+            li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+            li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+            }
+
+            li.dropdown {
+            display: inline-block;
+            }
+
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+
+            .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+            .dropdown-content a:hover {background-color: #f1f1f1;}
+
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <div class="containerParent">
+            <div class="lightGray"> 
+                <ul>
+                    <li><a href="index.html">Gienoviere</a></li>
+                    <li><a href="resume/GameDev resume.pdf">resume</a></li>
+                    <li><a href="project 1.html">Running into madness</a>
+                    <li><a href="project 2.html">Race Game Pro</a></li>
+                    <li><a href="project 3.html">RPG Game</a></li>
+                    <li><a class="active" href="Teamprojects.html">Teamproject 1</a></li>
+                    <li><a href="GameJamMalaga.html">Game Jams</a></li>
+                    <!--<li><a href="game design.html">Game Design</a></li>
+                    <li><a href="game coding.html">Game Coding</a></li>-->
+                    <li><a href="blender.html">Blender</a></li>
+                    <li><a href="beats.html">Beat/video</a></li>
+                    <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Hiring/Contact</a></li>
+                    <li class="dropdown" style="float:right">
+                        <a href="javascript:void(0)" class="dropbtn">My social Media</a>
+                        <div class="dropdown-content">
+                            <a href="https://www.youtube.com/channel/UC8DY3YnvjBtSi7p_TRhB7zA">Youtube</a>
+                            <a href="https://www.twitch.tv/ghetto_supastar10">Twitch</a>
+                            <a href="https://www.instagram.com/ghetto_supastar_/">Instagram</a>
+                            <a href="https://github.com/Gienoviere">Github</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <style>
+            body {
+              background-color: aqua;
+            }
+        </style>
+
+            <video width="600" style="margin-top: 50px; margin-right: 60px; float: right;" controls>
+                <source src="Teamprojects/dsafdasfdwsafedsafdsafdsafdsafgdsagfvdsagvdfsagvbdfsa_-_dsadf_-_Windows_Mac_Linux_-_Unity_2021.3.23f1_Personal___DX11__2023-06-19_10-24-17.mp4" type="video/mp4">
+                <source src="Teamprojects/dsafdasfdwsafedsafdsafdsafdsafgdsagfvdsagvdfsagvbdfsa_-_dsadf_-_Windows_Mac_Linux_-_Unity_2021.3.23f1_Personal___DX11__2023-06-19_10-24-17.mp4" type="video/ogg">
+                Your browser does not support HTML video.
+            </video>
+
+            <video width="600" style="margin-top: 50px; float: left;" controls>
+                <source src="Teamprojects/UI_Cosmic_-_Game_-_Windows_Mac_Linux_-_Unity_2021.3.23f1_Personal___DX11__2023-06-19_11-10-39.mp4" type="video/mp4">
+                <source src="Teamprojects/UI_Cosmic_-_Game_-_Windows_Mac_Linux_-_Unity_2021.3.23f1_Personal___DX11__2023-06-19_11-10-39.mp4" type="video/ogg">
+                Your browser does not support HTML video.
+            </video>
+
+            <p style="margin-top: 400px;">
+                This project is a team project, 
+                <br> that I had to make at school. 
+                <br> My part in this project is making the UI
+                <br> I made the main menu, pause menu
+                <br> ammo store, and speedometer and Mini map tex which was inspired from Mario Kart. 
+                <br> It was a interesting challenge working on this project, 
+                <br> because I am more solo developer. 
+                <br>We worked in Unity and used github, 
+                <br> and also in Trello to keep track of the work
+                <br> This game is called Cosmic racers where you race in space
+                <br> and you can shoot enemies
+            </p>
+
+            <div class="teamImage">
+                <img src="Teamprojects/Screenshot (335).png" style="width:20em; height:20em; float: right;">
+                <img src="Teamprojects/Screenshot (336).png" style="width:20em; height:20em; float: right;">
+            </div>
+            
+
+    </body>
+</html>
