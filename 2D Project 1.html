@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
         <title>My Game Dev Portfolio</title>
-    
+        <script src="p2.js"></script>
     
         <style>
             ul {
@@ -108,10 +108,116 @@
                     </li>
                 </ul>
 
-            </div>
+                <p style="margin: 5px;">2D project 1
+                
+                            <!-- Container for the image gallery -->
+                <div class="container" style="width: 50%; height: 50%; margin-left: 10px; float: left; ">
+
+                    <!-- Full-width images with number text -->
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 9</div>
+                            <img src="2D Art/Main Menu.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 9</div>
+                            <img src="2D Art/LevelSelect.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 9</div>
+                            <img src="2D Art/Tutorial.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 9</div>
+                            <img src="2D Art/Level 1.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 9</div>
+                            <img src="2D Art/Level 2.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 9</div>
+                            <img src="2D Art/CreditScene.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 9</div>
+                            <img src="2D Art/Animation.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 9</div>
+                            <img src="2D Art/Enemy Art.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">9 / 9</div>
+                            <img src="2D Art/Scripts.png" style="width:100%">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Image text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    
+                    <!-- Thumbnail images -->
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="2D Art/Main Menu.png" style="width:100%" onclick="currentSlide(1)" alt="Making Main menu for my 2D project">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="2D Art/LevelSelect.png" style="width:100%" onclick="currentSlide(2)" alt="Adjusting the buttons and layers and making sure that they work properly when selecting them">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="2D Art/Tutorial.png" style="width:100%" onclick="currentSlide(3)" alt="Making Small tutorial for players to players">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="2D Art/Level 1.png" style="width:100%" onclick="currentSlide(4)" alt="Level 1 design and ensuring enemies patrol in their designed lane">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="2D Art/Level 2.png" style="width:100%" onclick="currentSlide(5)" alt="Level 2 design">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="2D Art/CreditScene.png" style="width:100%" onclick="currentSlide(6)" alt="Small credit scene">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="2D Art/Animation.png" style="width:100%" onclick="currentSlide(7)" alt="Unity Animator is a hell and I know... it looks cluttered and too much">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="2D Art/Enemy Art.png" style="width:100%" onclick="currentSlide(8)" alt="Making Enemy art for the game">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="2D Art/Scripts.png" style="width:100%" onclick="currentSlide(9)" alt="Writed a lot of scripts for the game">
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="color:gold; float: right; margin-right: 310px;">Sneakpeak</h3>
+                <video width="600" style="margin-right: 60px; float: right;" controls>
+                    <source src="2D Art/Fire-Warrior-Of-Tsushima - MainMenu.mp4" type="video/mp4">
+                </video>
+
+                <p style="color:gold; float: right; margin-right: 70px;">This project was made in 2 weeks, it was a challenge 
+                    <br> to see how far we had progressed 
+                    <br> and we had to ensure it worked on arcade with the buttons.
+                    <br> It was difficult project seen I was more experienced with Unreal Engine
+                    <br> and I was more 3D, but nonetheless I was curious how I would do working
+                    <br> 2D. Well it was at times hard but I managed to make a game with lots
+                    <br> bugs. The gameplay is fun but the animation could be a lot better,
+                    <br> but I took the time to learn new things.
+                </p>
+            </div> 
 
              <!-- Scrolling backgroung -->
-             <div class="container">
+            <div class="container">
                 <div class="container-background">
                     <div class="sliding-background"></div>
                 </div>  
