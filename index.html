@@ -19,16 +19,16 @@
             overflow: hidden;
             background-color: #333;
             }
-        
+
             li {
             float: left;
-            border-right:1px solid #bbb;
+            border-right: 1px solid #bbb;
             }
-        
+
             li:last-child {
             border-right: none;
             }
-        
+
             li a {
             display: block;
             color: white;
@@ -36,11 +36,11 @@
             padding: 14px 16px;
             text-decoration: none;
             }
-        
+
             li a:hover:not(.active) {
             background-color: gold;
             }
-        
+
             .active {
             background-color: #fb0404;
             }
@@ -66,7 +66,7 @@
             position: absolute;
             background-color: #f9f9f9;
             min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
             }
 
@@ -78,11 +78,99 @@
             text-align: left;
             }
 
-            .dropdown-content a:hover {background-color: #f1f1f1;}
+            .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            }
 
             .dropdown:hover .dropdown-content {
             display: block;
             }
+
+            /* Skills bar styles */
+            .container2 {
+            width: 100%;
+            background-color: #ddd;
+            }
+
+            .skill {
+            text-align: center;
+            padding: 10px;
+            color: white;
+            }
+
+            .C {width: 80%; background-color: #04AA6D;}
+            .Cplus {width: 10%; background-color: #2196F3;}
+            .Unity {width: 70%; background-color: #f44336;}
+            .UE5 {width: 40%; background-color: #808080;}
+            .Blender {width: 35%; background-color: #FFA500;}
+            .FL {width: 50%; background-color: #FF6347;}
+            .HTML {width: 70%; background-color: #00BFFF;}
+            .JavaScript {width: 20%; background-color: #4CAF50;}
+            .Problem {width: 70%; background-color: #008080;}
+            .Passion {width: 100%; background-color: #FFD700;}
+            .Creativity {width: 80%; background-color: #800080;}
+
+            /* Responsive styles for mobile and tablet */
+            @media only screen and (max-width: 768px) {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                }
+                
+                li {
+                    float: none;
+                    width: 100%;
+                    text-align: center;
+                    border-right: none;
+                }
+
+                .dropdown-content {
+                    position: static;
+                }
+
+                /* Adjust image layout */
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 10px;
+                }
+
+                .lightGray div {
+                    margin: 0;
+                    float: none;
+                }
+
+                /* Adjust font size and layout */
+                div {
+                    text-align: center;
+                    margin-right: 0;
+                }
+            }
+
+            @media only screen and (max-width: 480px) {
+                /* Mobile-specific adjustments */
+                .containerParent {
+                    padding: 0 10px;
+                }
+
+                ul {
+                    flex-direction: column;
+                }
+
+                .container2 {
+                    margin: 0;
+                    width: 100%;
+                }
+
+                /* Make the text content more compact */
+                .lightGray div {
+                    font-size: medium;
+                    margin-right: 0;
+                    padding: 10px;
+                }
+            }
+
         </style>
       
     </head>
@@ -93,29 +181,26 @@
                 <ul>
                     <li><a class="active" href="index.html">Gienoviere</a></li>
                     <li><a href="resume/GameDev resume.pdf">Resume</a></li>
-                    <li><a href="project 1.html">Running into madness</a>
+                    <li><a href="project 1.html">Running into madness</a></li>
                     <li><a href="project 2.html">Race Game Pro</a></li>
                     <li><a href="project 3.html">RPG Game</a></li>
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn">Game Jams</a>
-                          <div class="dropdown-content">
+                        <div class="dropdown-content">
                             <a href="GameJamMalaga.html">first Jam</a>
-                          </div>
-                        </a>
+                        </div>
                     </li>
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn">Team Projects</a>
-                          <div class="dropdown-content">
+                        <div class="dropdown-content">
                             <a href="Teamproject 1.html">Team Project 1</a>
-                          </div>
-                        </a>
+                        </div>
                     </li>
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn">2D Projects</a>
-                          <div class="dropdown-content">
+                        <div class="dropdown-content">
                             <a href="2D Project 1.html">2D Project 1</a>
-                          </div>
-                        </a>
+                        </div>
                     </li>   
                     
                     <li><a href="blender.html">Blender</a></li>
@@ -215,7 +300,7 @@
                 </div>
             </div>
 
-            <!-- Scrolling backgroung -->
+            <!-- Scrolling background -->
             <div class="container">
                 <div class="container-background">
                     <div class="sliding-background"></div>

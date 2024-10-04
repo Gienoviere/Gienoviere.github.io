@@ -253,7 +253,7 @@ p {
 }
 
 .UE5 {
-  width: 40%;
+  width: 60%;
 }
 
 .Blender {
@@ -283,5 +283,92 @@ p {
 .Creativity {
   width: 80%;
 }
+
+/* For tablets (screens 768px wide and above) */
+@media screen and (max-width: 1024px) {
+  .containerParent {
+      min-height: 1000px;
+  }
+
+  .lightGray {
+      padding: 20px;
+  }
+
+  img {
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+  }
+
+  .container2 {
+      width: 30%;
+  }
+
+  ul {
+      display: block;
+      text-align: center;
+  }
+
+  li {
+      float: none;
+      display: inline-block;
+      margin: 10px 0;
+  }
+
+  .dropdown-content {
+      position: relative;
+  }
+}
+
+/* For mobile phones (screens 600px wide and below) */
+@media screen and (max-width: 600px) {
+  .containerParent {
+      min-height: 900px;
+  }
+
+  .lightGray {
+      padding: 10px;
+  }
+
+  img {
+      width: 100%;
+      height: auto;
+      margin: 5px 0;
+  }
+
+  ul {
+      display: block;
+      text-align: center;
+  }
+
+  li {
+      float: none;
+      display: block;
+      margin: 5px 0;
+  }
+
+  .dropdown-content {
+      position: relative;
+  }
+
+  .container2 {
+      width: 40%;
+      font-size: 14px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+  .skill {
+      font-size: 16px;
+  }
+
+  .link1, .link2, .link3 {
+      font-size: 14px;
+      padding: 10px 20px;
+  }
+}
+
 
 
