@@ -226,145 +226,48 @@ p {
   cursor: pointer;
 }
 
-.color{
-  color: gold;
-}
+/* Skill Progress Bars */
+.C { width: 80%; background-color: #04AA6D; }
+.Cplus { width: 60%; background-color: #2196F3; }
+.Unity { width: 70%; background-color: #f44336; }
+.UE5 { width: 60%; background-color: #808080; }
+.Blender { width: 35%; background-color: #FFA500; }
+.FL { width: 50%; background-color: #FF6347; }
+.HTML { width: 70%; background-color: #00BFFF; }
+.JavaScript { width: 20%; background-color: #4CAF50; }
+.Problem { width: 70%; background-color: #008080; }
+.Passion { width: 100%; background-color: #FFD700; }
+.Creativity { width: 80%; background-color: #800080; }
 
-.C {
-  width: 80%;
-}
-
-.Cplus {
-  width: 10%;
-}
-
-.Unity {
-  width: 70%;
-}
-
-.UE5 {
-  width: 60%;
-}
-
-.Blender {
-  width: 35%;
-}
-
-.FL {
-  width: 50%;
-}
-
-.HTML {
-  width: 70%;
-}
-
-.JavaScript {
-  width: 20%;
-}
-
-.Problem {
-  width: 70%;
-}
-
-.Passion {
-  width: 100%;
-}
-
-.Creativity {
-  width: 80%;
-}
-
-/* For tablets (screens 768px wide and above) */
+/* Responsive Styles */
 @media screen and (max-width: 1024px) {
-  .containerParent {
-      min-height: 1000px;
-  }
-
-  .lightGray {
-      padding: 20px;
-  }
-
-  img {
-      width: 100%;
-      height: auto;
-      margin: 10px 0;
-  }
-
-  .container2 {
-      width: 30%;
-  }
-
-  ul {
-      display: block;
-      text-align: center;
-  }
-
-  li {
-      float: none;
-      display: inline-block;
-      margin: 10px 0;
-  }
-
-  .dropdown-content {
-      position: relative;
-  }
+  .containerParent { min-height: 1000px; }
+  .lightGray { padding: 20px; }
+  img { width: 100%; height: auto; margin: 10px 0; }
+  .container2 { width: 30%; }
+  ul { display: block; text-align: center; }
+  li { float: none; display: inline-block; margin: 10px 0; }
+  .dropdown-content { position: relative; }
 }
 
 /* For mobile phones (screens 600px wide and below) */
 @media screen and (max-width: 600px) {
-  .containerParent {
-      min-height: 900px;
-  }
-
-  .lightGray {
-      padding: 10px;
-  }
-
-  img {
-      width: 100%;
-      height: auto;
-      margin: 5px 0;
-  }
-
-  ul {
-      display: block;
-      text-align: center;
-  }
-
-  li {
-      float: none;
-      display: block;
-      margin: 5px 0;
-  }
-
-  .dropdown-content {
-      position: relative;
-  }
-
-  .container2 {
-      width: 40%;
-      font-size: 14px;
-  }
-
-  p {
-      font-size: 16px;
-  }
-
-  .skill {
-      font-size: 16px;
-  }
-
-  .link1, .link2, .link3 {
-      font-size: 14px;
-      padding: 10px 20px;
-  }
+  .containerParent { min-height: 900px; }
+  .lightGray { padding: 10px; }
+  img { width: 100%; height: auto; margin: 5px 0; }
+  ul { display: block; text-align: center; }
+  li { float: none; display: block; margin: 5px 0; }
+  .container2 { width: 40%; font-size: 14px; }
+  p { font-size: 16px; }
+  .skill { font-size: 16px; }
+  .link1, .link2, .link3 { font-size: 14px; padding: 10px 20px; }
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  
   background-color: #333;
   }
 
@@ -394,12 +297,11 @@ ul {
   }
 
   li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  }
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
   li a:hover, .dropdown:hover .dropbtn {
   background-color: red;
@@ -412,7 +314,7 @@ ul {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #ef0707;
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
