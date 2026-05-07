@@ -1,227 +1,83 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="Gienoviere D">
-        <meta name="description" content="GameDev portfolio">
-        <meta name="Game Developer" content="Gienoviere D">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
-        <title>My Game Dev Portfolio</title>
-        <script src="p2.js"></script>
-    
-        <style>
-            ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            }
-        
-            li {
-            float: left;
-            border-right:1px solid #bbb;
-            }
-        
-            li:last-child {
-            border-right: none;
-            }
-        
-            li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            }
-        
-            li a:hover:not(.active) {
-            background-color: gold;
-            }
-        
-            .active {
-            background-color: #fb0404;
-            }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GameDev portfolio - 2D Project 1">
+  <meta name="author" content="Gienoviere D">
+  <title>2D Project 1 | Gienoviere</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="p2.js" defer></script>
+</head>
+<body>
+  <div class="bg-animated"></div>
+  <div class="page-content">
+    <header class="site-header">
+      <div class="logo"><a href="index.html">Gienoviere</a></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume/GameDev%20resume.pdf">Resume</a></li>
+          <li><a href="project1.html">Running into madness</a></li>
+          <li><a href="project2.html">Race Game Pro</a></li>
+          <li><a href="project3.html">RPG Game</a></li>
+          <li><a href="GameJamMalaga.html">Game Jams</a></li>
+          <li><a href="Teamproject1.html">Team Projects</a></li>
+          <li><a class="active" href="2DProject1.html">2D Projects</a></li>
+          <li><a href="blender.html">Blender</a></li>
+          <li><a href="beats.html">Beat/video</a></li>
+          <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-            li a, .dropbtn {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            }
-
-            li a:hover, .dropdown:hover .dropbtn {
-            background-color: red;
-            }
-
-            li.dropdown {
-            display: inline-block;
-            }
-
-            .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            }
-
-            .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-            }
-
-            .dropdown-content a:hover {background-color: #f1f1f1;}
-
-            .dropdown:hover .dropdown-content {
-            display: block;
-            }
-        </style>
-    
-    </head>
-    <body>
-        <div class="containerParent">
-            <div class="lightGray"> 
-                <ul>
-                    <li><a href="index.html">Gienoviere</a></li>
-                    <li><a href="resume/GameDev resume.pdf">Resume</a></li>
-                    <li><a href="project 1.html">Running into madness</a>
-                    <li><a href="project 2.html">Race Game Pro</a></li>
-                    <li><a href="project 3.html">RPG Game</a></li>
-                    <li><a href="GameJamMalaga.html">Game Jams</a></li>
-                    <li><a href="Teamproject 1.html">Team Projects</a></li>
-                    <li><a class="active" href="2D Project 1.html">2D Projects</a></li>
-                    <li><a href="blender.html">Blender</a></li>
-                    <li><a href="beats.html">Beat/video</a></li>
-                    <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Hiring/Contact</a></li>
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">2D Projects</a>
-                        <div class="dropdown-content">
-                            <a href="#">2D Project 2</a>
-                        </div>
-                    </li>
-                </ul>
-
-                <p style="margin: 5px;">2D project 1
-                
-                            <!-- Container for the image gallery -->
-                <div class="container" style="width: 50%; height: 50%; margin-left: 10px; float: left; ">
-
-                    <!-- Full-width images with number text -->
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 9</div>
-                            <img src="2D Art/Main Menu.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 9</div>
-                            <img src="2D Art/LevelSelect.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 9</div>
-                            <img src="2D Art/Tutorial.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">4 / 9</div>
-                            <img src="2D Art/Level 1.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">5 / 9</div>
-                            <img src="2D Art/Level 2.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">6 / 9</div>
-                            <img src="2D Art/CreditScene.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">7 / 9</div>
-                            <img src="2D Art/Animation.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">8 / 9</div>
-                            <img src="2D Art/Enemy Art.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">9 / 9</div>
-                            <img src="2D Art/Scripts.png" style="width:100%">
-                    </div>
-
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                    <!-- Image text -->
-                    <div class="caption-container">
-                        <p id="caption"></p>
-                    </div>
-                    
-                    <!-- Thumbnail images -->
-                    <div class="row">
-                        <div class="column">
-                            <img class="demo cursor" src="2D Art/Main Menu.png" style="width:100%" onclick="currentSlide(1)" alt="Making Main menu for my 2D project">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="2D Art/LevelSelect.png" style="width:100%" onclick="currentSlide(2)" alt="Adjusting the buttons and layers and making sure that they work properly when selecting them">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="2D Art/Tutorial.png" style="width:100%" onclick="currentSlide(3)" alt="Making Small tutorial for players to players">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="2D Art/Level 1.png" style="width:100%" onclick="currentSlide(4)" alt="Level 1 design and ensuring enemies patrol in their designed lane">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="2D Art/Level 2.png" style="width:100%" onclick="currentSlide(5)" alt="Level 2 design">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="2D Art/CreditScene.png" style="width:100%" onclick="currentSlide(6)" alt="Small credit scene">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="2D Art/Animation.png" style="width:100%" onclick="currentSlide(7)" alt="Unity Animator is a hell and I know... it looks cluttered and too much">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="2D Art/Enemy Art.png" style="width:100%" onclick="currentSlide(8)" alt="Making Enemy art for the game">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="2D Art/Scripts.png" style="width:100%" onclick="currentSlide(9)" alt="Writed a lot of scripts for the game">
-                        </div>
-                    </div>
-                </div>
-
-                <h3 style="color:gold; float: right; margin-right: 310px;">Sneakpeak</h3>
-                <video width="600" style="margin-right: 60px; float: right;" controls>
-                    <source src="2D Art/Fire-Warrior-Of-Tsushima - MainMenu.mp4" type="video/mp4">
-                </video>
-
-                <p style="color:gold; float: right; margin-right: 70px;">This project was made in 2 weeks, it was a challenge 
-                    <br> to see how far we had progressed 
-                    <br> and we had to ensure it worked on arcade with the buttons.
-                    <br> It was difficult project seen I was more experienced with Unreal Engine
-                    <br> and I was more 3D, but nonetheless I was curious how I would do working
-                    <br> 2D. Well it was at times hard but I managed to make a game with lots
-                    <br> bugs. The gameplay is fun but the animation could be a lot better,
-                    <br> but I took the time to learn new things.
-                </p>
-            </div> 
-
-             <!-- Scrolling backgroung -->
-            <div class="container">
-                <div class="container-background">
-                    <div class="sliding-background"></div>
-                </div>  
+    <main>
+      <section class="project-grid">
+        <div class="project-media">
+          <div class="slideshow">
+            <div class="mySlides"><div class="slideshow-number">1 / 9</div><img src="2D%20Art/Main%20Menu.png" alt="Main menu"></div>
+            <div class="mySlides"><div class="slideshow-number">2 / 9</div><img src="2D%20Art/LevelSelect.png" alt="Level select"></div>
+            <div class="mySlides"><div class="slideshow-number">3 / 9</div><img src="2D%20Art/Tutorial.png" alt="Tutorial"></div>
+            <div class="mySlides"><div class="slideshow-number">4 / 9</div><img src="2D%20Art/Level%201.png" alt="Level 1"></div>
+            <div class="mySlides"><div class="slideshow-number">5 / 9</div><img src="2D%20Art/Level%202.png" alt="Level 2"></div>
+            <div class="mySlides"><div class="slideshow-number">6 / 9</div><img src="2D%20Art/CreditScene.png" alt="Credits"></div>
+            <div class="mySlides"><div class="slideshow-number">7 / 9</div><img src="2D%20Art/Animation.png" alt="Animator"></div>
+            <div class="mySlides"><div class="slideshow-number">8 / 9</div><img src="2D%20Art/Enemy%20Art.png" alt="Enemy art"></div>
+            <div class="mySlides"><div class="slideshow-number">9 / 9</div><img src="2D%20Art/Scripts.png" alt="Scripts"></div>
+            <a class="slideshow-prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="slideshow-next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="slideshow-caption"><p id="caption"></p></div>
+            <div class="slideshow-thumbnails">
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="2D%20Art/Main%20Menu.png" onclick="currentSlide(1)" alt="Main menu"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="2D%20Art/LevelSelect.png" onclick="currentSlide(2)" alt="Level select"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="2D%20Art/Tutorial.png" onclick="currentSlide(3)" alt="Tutorial"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="2D%20Art/Level%201.png" onclick="currentSlide(4)" alt="Level 1"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="2D%20Art/Level%202.png" onclick="currentSlide(5)" alt="Level 2"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="2D%20Art/CreditScene.png" onclick="currentSlide(6)" alt="Credits"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="2D%20Art/Animation.png" onclick="currentSlide(7)" alt="Animator"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="2D%20Art/Enemy%20Art.png" onclick="currentSlide(8)" alt="Enemy art"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="2D%20Art/Scripts.png" onclick="currentSlide(9)" alt="Scripts"></div>
             </div>
+          </div>
         </div>
-    </body>
+        <div class="project-info">
+          <h2>2D Project – Fire Warrior of Tsushima</h2>
+          <p>
+            Made in 2 weeks as a challenge, built for arcade controls. I was more experienced
+            with 3D/Unreal, but I dove into Unity 2D. The gameplay worked, animations could
+            be better, but I learned a ton.
+          </p>
+          <h3 style="color:var(--color-accent);">Sneak Peek</h3>
+          <video width="100%" controls>
+            <source src="2D%20Art/Fire-Warrior-Of-Tsushima%20-%20MainMenu.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Gienoviere. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
 </html>

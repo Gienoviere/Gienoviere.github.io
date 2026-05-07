@@ -1,207 +1,82 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GameDev portfolio - MalagaJam">
+  <meta name="author" content="Gienoviere D">
+  <title>MalagaJam | Gienoviere</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="p2.js" defer></script>
+</head>
+<body>
+  <div class="bg-animated"></div>
+  <div class="page-content">
+    <header class="site-header">
+      <div class="logo"><a href="index.html">Gienoviere</a></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume/GameDev%20resume.pdf">Resume</a></li>
+          <li><a href="project1.html">Running into madness</a></li>
+          <li><a href="project2.html">Race Game Pro</a></li>
+          <li><a href="project3.html">RPG Game</a></li>
+          <li><a class="active" href="GameJamMalaga.html">Game Jams</a></li>
+          <li><a href="Teamproject1.html">Team Projects</a></li>
+          <li><a href="2DProject1.html">2D Projects</a></li>
+          <li><a href="blender.html">Blender</a></li>
+          <li><a href="beats.html">Beat/video</a></li>
+          <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="Gienoviere D">
-        <meta name="description" content="GameDev portfolio">
-        <meta name="Game Developer" content="Gienoviere D">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
-        <title>My Game Dev Portfolio</title>
-        <script src="p2.js"></script>
-
-
-        <style>
-            ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            }
-    
-            li {
-            float: left;
-            border-right:1px solid #bbb;
-            }
-    
-            li:last-child {
-            border-right: none;
-            }
-    
-            li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            }
-    
-            li a:hover:not(.active) {
-            background-color: gold;
-            }
-    
-            .active {
-            background-color: red;
-            }
-            li a, .dropbtn {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            }
-    
-            li a:hover, .dropdown:hover .dropbtn {
-            background-color: red;
-            }
-    
-            li.dropdown {
-            display: inline-block;
-            }
-    
-            .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            }
-    
-            .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-            }
-    
-            .dropdown-content a:hover {background-color: #f1f1f1;}
-    
-            .dropdown:hover .dropdown-content {
-            display: block;
-            }
-        </style>
-    </head>
-
-    <body> 
-        <div class="containerParent">
-            <div class="lightGray">
-                <ul>
-                    <li><a href="index.html">Gienoviere</a></li>
-                    <li><a href="resume/GameDev resume - Copy.pdf">Resume</a></li>
-                    <li><a href="project 1.html">Running into madness</a>
-                    <li><a href="project 2.html">Race Game Pro</a></li>
-                    <li><a href="project 3.html">RPG Game</a></li>
-                    <li><a class="active" href="#">Game Jams</a>
-                    <li><a href="Teamproject 1.html">Team Projects</a></li>
-                    <li><a href="2D Project 1.html">2D Projects</a></li>
-                    <li><a href="blender.html">Blender</a></li>
-                    <li><a href="beats.html">Beat/video</a></li>
-                    <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Hiring/Contact</a></li>
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">Game Jams</a>
-                          <div class="dropdown-content">
-                            <a href="#">Jam 2</a>
-                          </div>
-                        </a>
-                    </li>
-                </ul>
-
-                    <p style="margin: 5px;">MalagaJam
-                
-                                <!-- Container for the image gallery -->
-                    <div class="container" style="width: 50%; height: 50%; margin-left: 10px; float: left; ">
-
-                        <!-- Full-width images with number text -->
-                        <div class="mySlides">
-                            <div class="numbertext">1 / 7</div>
-                                <img src="Game Jams/MalagaSite.png" style="width:100%">
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">2 / 7</div>
-                                <img src="Game Jams/Player.png" style="width:100%">
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">3 / 7</div>
-                                <img src="Game Jams/AI.png" style="width:100%">
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">4 / 7</div>
-                                <img src="Game Jams/AIBehave.png" style="width:100%">
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">5 / 7</div>
-                                <img src="Game Jams/AI testing Roots.png" style="width:100%">
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">6 / 7</div>
-                                <img src="Game Jams/Making BossEnemy.png" style="width:100%">
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">7 / 7</div>
-                                <img src="Game Jams/Creating Menu Roots.png" style="width:100%">
-                        </div>
-
-                        <!-- Next and previous buttons -->
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                        <!-- Image text -->
-                        <div class="caption-container">
-                            <p id="caption"></p>
-                        </div>
-                        
-                        <!-- Thumbnail images -->
-                        <div class="row">
-                            <div class="column">
-                                <img class="demo cursor" src="Game Jams/MalagaSite.png" style="width:100%" onclick="currentSlide(1)" alt="Start Jam and 48 hours to make a game with the them as root.">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="Game Jams/Player.png" style="width:100%" onclick="currentSlide(2)" alt="Writing script for player">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="Game Jams/AI.png" style="width:100%" onclick="currentSlide(3)" alt="Making script for AI movements and patrolling">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="Game Jams/AIBehave.png" style="width:100%" onclick="currentSlide(4)" alt="checking code why enemy is not attacking">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="Game Jams/AI testing Roots.png" style="width:100%" onclick="currentSlide(5)" alt="Adjusting enemy player detection line and attack line">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="Game Jams/Making BossEnemy.png" style="width:100%" onclick="currentSlide(6)" alt="Making Enemy boss and analyzing his behaviour to ensure if he is following scripts command">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="Game Jams/Creating Menu Roots.png" style="width:100%" onclick="currentSlide(7)" alt="At last making main menu for the game with screen resolution and graphics and making sound option">
-                            </div>
-                        </div>
-                    </div> 
-
-                    <h3 style="color:gold; float: right; margin-right: 310px;">Sneakpeak</h3>
-                    <video width="600" style="margin-right: 60px; float: right;" controls>
-                        <source src="Game Jams/Sneakpeak.mp4" type="video/mp4">
-                    </video>
-                    <h3 style="color:gold; float: right; margin-right: 250px;">AI Behave Test (second video)</h3>
-                    <video width="600" style="margin-right: 60px; float: right;" controls>
-                        <source src="Game Jams/AI Behave Test.mp4" type="video/mp4">
-                    </video>
+    <main>
+      <section class="project-grid">
+        <div class="project-media">
+          <div class="slideshow">
+            <div class="mySlides"><div class="slideshow-number">1 / 7</div><img src="Game%20Jams/MalagaSite.png" alt="Jam site"></div>
+            <div class="mySlides"><div class="slideshow-number">2 / 7</div><img src="Game%20Jams/Player.png" alt="Player script"></div>
+            <div class="mySlides"><div class="slideshow-number">3 / 7</div><img src="Game%20Jams/AI.png" alt="AI script"></div>
+            <div class="mySlides"><div class="slideshow-number">4 / 7</div><img src="Game%20Jams/AIBehave.png" alt="AI behaviour"></div>
+            <div class="mySlides"><div class="slideshow-number">5 / 7</div><img src="Game%20Jams/AI%20testing%20Roots.png" alt="AI testing"></div>
+            <div class="mySlides"><div class="slideshow-number">6 / 7</div><img src="Game%20Jams/Making%20BossEnemy.png" alt="Boss enemy"></div>
+            <div class="mySlides"><div class="slideshow-number">7 / 7</div><img src="Game%20Jams/Creating%20Menu%20Roots.png" alt="Menu"></div>
+            <a class="slideshow-prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="slideshow-next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="slideshow-caption"><p id="caption"></p></div>
+            <div class="slideshow-thumbnails">
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="Game%20Jams/MalagaSite.png" onclick="currentSlide(1)" alt="Jam site"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="Game%20Jams/Player.png" onclick="currentSlide(2)" alt="Player script"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="Game%20Jams/AI.png" onclick="currentSlide(3)" alt="AI script"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="Game%20Jams/AIBehave.png" onclick="currentSlide(4)" alt="AI behaviour"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="Game%20Jams/AI%20testing%20Roots.png" onclick="currentSlide(5)" alt="AI testing"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="Game%20Jams/Making%20BossEnemy.png" onclick="currentSlide(6)" alt="Boss enemy"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="Game%20Jams/Creating%20Menu%20Roots.png" onclick="currentSlide(7)" alt="Menu"></div>
             </div>
-
-            <!-- Scrolling backgroung -->
-            <div class="container">
-                <div class="container-background">
-                    <div class="sliding-background"></div>
-                </div>     
-            </div>
+          </div>
         </div>
-    </body>
+        <div class="project-info">
+          <h2>MalagaJam</h2>
+          <p>
+            48-hour game jam with the theme "Roots". I worked on player movement, AI patrolling
+            and detection, a boss enemy, and main menu. Built in Unity with C#.
+          </p>
+          <h3 style="color:var(--color-accent);">Sneak Peek</h3>
+          <video width="100%" controls>
+            <source src="Game%20Jams/Sneakpeak.mp4" type="video/mp4">
+          </video>
+          <h3 style="color:var(--color-accent);">AI Behaviour Test</h3>
+          <video width="100%" controls>
+            <source src="Game%20Jams/AI%20Behave%20Test.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Gienoviere. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
 </html>

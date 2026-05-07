@@ -1,104 +1,62 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GameDev portfolio - Blender projects">
+  <meta name="author" content="Gienoviere D">
+  <title>Blender | Gienoviere</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="bg-animated"></div>
+  <div class="page-content">
+    <header class="site-header">
+      <div class="logo"><a href="index.html">Gienoviere</a></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume/GameDev%20resume.pdf">Resume</a></li>
+          <li><a href="project1.html">Running into madness</a></li>
+          <li><a href="project2.html">Race Game Pro</a></li>
+          <li><a href="project3.html">RPG Game</a></li>
+          <li><a href="GameJamMalaga.html">Game Jams</a></li>
+          <li><a href="Teamproject1.html">Team Projects</a></li>
+          <li><a href="2DProject1.html">2D Projects</a></li>
+          <li><a class="active" href="blender.html">Blender</a></li>
+          <li><a href="beats.html">Beat/video</a></li>
+          <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="Gienoviere D">
-        <meta name="description" content="GameDev portfolio">
-        <meta name="Game Developer" content="Gienoviere D">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
-        <title>My Game Dev Portfolio</title>
-
-        <style>
-        ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-        }
-
-        li {
-        float: left;
-        border-right:1px solid #bbb;
-        }
-
-        li:last-child {
-        border-right: none;
-        }
-
-        li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-        background-color: gold;
-        }
-
-        .active {
-        background-color: red;
-        }
-        </style>
-    </head>
-
-    <body>
-      <div class="containerParent">
-        <div class="lightGray">
-          <ul>
-            <li><a href="index.html">Gienoviere</a></li>
-            <li><a href="resume/GameDev resume.pdf">Resume</a></li>
-            <li><a href="project 1.html">Running into madness</a>
-            <li><a href="project 2.html">Race Game Pro</a></li>
-            <li><a href="project 3.html">RPG Game</a></li>
-            <li><a href="GameJamMalaga.html">Game Jams</a></li>
-            <li><a href="Teamproject 1.html">Team Projects</a></li>
-            <li><a href="2D Project 1.html">2D Projects</a></li>
-            <li><a class="active" href="#">Blender</a></li>
-            <li><a href="beats.html">Beat/video</a></li>
-            <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Hiring/Contact</a></li>
-          </ul>
-
-          <div style="float:right;">
-            
-            <p>This project was the first Blender project, 
-              <br> that I had to make at school. 
-              <br> I worked with edit mode/sculp mode/
-              <br>Texture Paint. I also used shader 
-              <br> and wireframe mode. 
-              <br> I had great pleasure working on this project, 
-              <br> Making the can realistic as possible. 
-              <br> I really loved using Blender to design, 
-              <br> This software is my learning priority for me 
-              <br> game designer ambitions. 
-              <br> I will master this software 
-              <br> so I can design landscapes/characters/objects</p>
-          </div>
-            
-          <div>
-            <img src="Blender/B1.png" style="width: 25%;">
-            <img src="Blender/B2.png" style="width: 25%;">
-            <img src="Blender/B3.png" style="width: 25%;">          
-            <img src="Blender/B4.png" style="width: 25%;">
-            <img src="Blender/B5.png" style="width: 25%;">
-            <img src="Blender/B6.png" style="width: 25%;">           
-            <img src="Blender/B7.png" style="width: 25%;">           
-            <img src="Blender/B8.png" style="width: 25%;">   
-            <img src="Blender/B9.png" style="width: 25%;">
-          </div>
-          
+    <main>
+      <h1 style="color:var(--color-accent); margin-bottom:1rem;">Blender Work</h1>
+      <div class="project-grid" style="grid-template-columns:1fr 2fr;">
+        <div class="project-info">
+          <p>
+            My first Blender project at school. I used edit mode, sculpt mode, texture paint,
+            shader and wireframe. I aimed to make a realistic can. I love Blender and plan to
+            master it for landscape, character, and object design.
+          </p>
         </div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem;">
+          <img src="Blender/B1.png" alt="Blender render 1" style="width:100%">
+          <img src="Blender/B2.png" alt="Blender render 2" style="width:100%">
+          <img src="Blender/B3.png" alt="Blender render 3" style="width:100%">
+          <img src="Blender/B4.png" alt="Blender render 4" style="width:100%">
+          <img src="Blender/B5.png" alt="Blender render 5" style="width:100%">
+          <img src="Blender/B6.png" alt="Blender render 6" style="width:100%">
+          <img src="Blender/B7.png" alt="Blender render 7" style="width:100%">
+          <img src="Blender/B8.png" alt="Blender render 8" style="width:100%">
+          <img src="Blender/B9.png" alt="Blender render 9" style="width:100%">
+        </div>
+      </div>
+    </main>
 
-        <!-- Scrolling backgroung -->
-        <div class="container">
-          <div class="container-background">
-            <div class="sliding-background"></div>
-          </div>  
-        </div>  
-      </div>   
-    </body>
+    <footer class="site-footer">
+      <p>&copy; 2026 Gienoviere. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
 </html>

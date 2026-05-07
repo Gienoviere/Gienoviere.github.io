@@ -1,98 +1,62 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="Gienoviere D">
-    <meta name="description" content="GameDev portfolio">
-    <meta name="Game Developer" content="Gienoviere D">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="index.css">
-    <title>My Game Dev Portfolio</title>
-
-    <style>
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-      }
-
-      li {
-        float: left;
-        border-right:1px solid #bbb;
-      }
-
-      li:last-child {
-        border-right: none;
-      }
-
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      li a:hover:not(.active) {
-        background-color: gold;
-      }
-
-      .active {
-        background-color: red;
-      }
-    </style>    
-  </head>
-
-  <body>
-    <div class="containerParent">
-      <div class="lightGray">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GameDev portfolio - Beats & Video">
+  <meta name="author" content="Gienoviere D">
+  <title>Beat/Video | Gienoviere</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="bg-animated"></div>
+  <div class="page-content">
+    <header class="site-header">
+      <div class="logo"><a href="index.html">Gienoviere</a></div>
+      <nav class="main-nav" aria-label="Main navigation">
         <ul>
-          <li><a href="index.html">Gienoviere</a></li>
-          <li><a href="resume/GameDev resume.pdf">Resume</a></li>
-          <li><a href="project 1.html">Running into madness</a>
-          <li><a href="project 2.html">Race Game Pro</a></li>
-          <li><a href="project 3.html">RPG Game</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume/GameDev%20resume.pdf">Resume</a></li>
+          <li><a href="project1.html">Running into madness</a></li>
+          <li><a href="project2.html">Race Game Pro</a></li>
+          <li><a href="project3.html">RPG Game</a></li>
           <li><a href="GameJamMalaga.html">Game Jams</a></li>
-          <li><a href="Teamproject 1.html">Team Projects</a></li>
-          <li><a href="2D Project 1.html">2D Projects</a></li>
+          <li><a href="Teamproject1.html">Team Projects</a></li>
+          <li><a href="2DProject1.html">2D Projects</a></li>
           <li><a href="blender.html">Blender</a></li>
-          <li><a class="active" href="#">Beat/video</a></li>
-          <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Hiring/Contact</a></li>
+          <li><a class="active" href="beats.html">Beat/video</a></li>
+          <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Contact</a></li>
         </ul>
+      </nav>
+    </header>
 
-        <div style="float:right; margin:auto; margin-right: 150px;">
-          <P>New York beat</P>
-          <audio controls>
-            <source src="fl Studio/New York.mp3" type="audio/ogg">
-            <source src="fl Studio/New York.mp3" type="audio/mpeg">   
+    <main>
+      <h1 style="color:var(--color-accent); margin-bottom:1rem;">Beats & Video</h1>
+      <div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start;">
+        <div style="flex:1; min-width:300px;">
+          <h2 style="color:var(--color-accent);">New York Beat</h2>
+          <audio controls style="width:100%;">
+            <source src="fl%20Studio/New%20York.mp3" type="audio/mpeg">
           </audio>
+          <div style="margin-top:1rem;">
+            <a target="_blank" href="fl%20Studio/FL%20Studio%20NY%20(1).png">
+              <img src="fl%20Studio/FL%20Studio%20NY%20(1).png" alt="FL Studio project" style="width:100%; max-width:370px; margin-bottom:0.5rem;">
+            </a>
+            <p style="font-size:0.9rem;">Comparing the beat to the actual song that inspired me</p>
+          </div>
         </div>
-   
-        <div class="gallery" style="float: right; margin: auto;">
-          <p>New York Beat</p>
-          <a target="_blank" href="fl Studio/FL Studio NY (1).png">
-            <img src="fl Studio/FL Studio NY (1).png" width="370">
+        <div style="flex:1; min-width:300px;">
+          <a target="_blank" href="fl%20Studio/FL%20Studio%20(4).png">
+            <img src="fl%20Studio/FL%20Studio%20(4).png" alt="FL Studio project" style="width:100%; max-width:370px; margin-bottom:0.5rem;">
           </a>
-          <div class="color">Comparing the beat to the actual song where I took inspiration from</div>
+          <p style="font-size:0.9rem;">Equipped with brush and tools, I arranged sounds like Mozart to make a Queensbridge beat.</p>
         </div>
-        
-        <div class="gallery" style="float: left; margin-left: 40px;">
-          <p>New York Beat</p>
-          <a target="_blank" href="fl Studio/FL Studio (4).png">
-            <img src="fl Studio/FL Studio (4).png" width="370">
-          </a>
-          <div class="color">Equipped with brush and some tools <br> I was putting the sounds and tunes together like Mozart <br> to make a amazing beat that cleary sounds New york Queensbridge </div>
-        </div>
-
       </div>
-      <!-- Scrolling backgroung -->
-    <div class="container">
-      <div class="container-background">
-        <div class="sliding-background"></div>
-      </div>  
-    </div>
+    </main>
 
-  </body>
+    <footer class="site-footer">
+      <p>&copy; 2026 Gienoviere. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
 </html>
