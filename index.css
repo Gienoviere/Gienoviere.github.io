@@ -20,7 +20,7 @@ h1, h2, h3, .logo a {
 }
 .btn, .skill-item label, .slideshow-number {
   font-family: 'Press Start 2P', cursive;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
 }
 
 /*Mouse Cursor*/
@@ -570,6 +570,9 @@ main {
   .slideshow-thumb-column {
     flex: 1 0 25%;
     max-width: 25%;
+  }
+  .about-section {
+    grid-template-columns: 1fr;   /* stack about images above text */
   }
 }
 
