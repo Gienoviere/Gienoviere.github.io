@@ -136,6 +136,42 @@ main {
   width: 100%;
 }
 
+/* ===== About Section ===== */
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.about-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.about-images img {
+  width: 100%;
+  max-width: 250px;   /* <-- keeps images from being too large */
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-text h1 {
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.about-text p {
+  color: var(--color-text-light);
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
 /* ===== Project Page Layout (common) ===== */
 .project-grid {
   display: grid;
