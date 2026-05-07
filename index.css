@@ -12,6 +12,50 @@
   --header-height: 60px;
 }
 
+/*Slideshow*/
+h1, h2, h3, .logo a {
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.btn, .skill-item label, .slideshow-number {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.65rem;
+}
+
+/*Mouse Cursor*/
+body {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><line x1='12' y1='0' x2='12' y2='24' stroke='goldenrod' stroke-width='2'/><line x1='0' y1='12' x2='24' y2='12' stroke='goldenrod' stroke-width='2'/></svg>") 12 12, auto;
+}
+a, button, .btn, .slideshow-thumb-column {
+  cursor: pointer; /* you can also use a custom pointer cursor if you like */
+}
+
+/*Starfield theme*/
+#particle-canvas {
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 0;  /* sits above the bg-animated but below the page-content */
+  pointer-events: none;
+}
+
+/*Glitch*/
+.logo a {
+  transition: color 0.3s, text-shadow 0.3s;
+}
+.logo a:hover {
+  color: #fff;
+  text-shadow: 2px 2px 0 red, -2px -2px 0 cyan;
+  animation: glitch 0.3s linear infinite;
+}
+@keyframes glitch {
+  0% { transform: translate(0); }
+  25% { transform: translate(-2px, 2px); }
+  50% { transform: translate(2px, -2px); }
+  75% { transform: translate(-2px, -2px); }
+  100% { transform: translate(0); }
+}
+
 /* ===== Reset & Base ===== */
 *,
 *::before,
@@ -369,6 +413,153 @@ main {
 }
 .spacer {
   margin: 2rem 0;
+}
+
+/*RPG Quest-like design*/
+/* ===== Quest Cards ===== */
+.quest-section {
+  margin: 3rem 0;
+}
+.quest-section h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+}
+.quest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.quest-card {
+  background: rgba(20, 20, 20, 0.85);
+  border: 1px solid #333;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.quest-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(218,165,32,0.15) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.quest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6), 0 0 15px rgba(218,165,32,0.3);
+}
+.quest-card:hover::before {
+  opacity: 1;
+}
+.quest-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.quest-icon {
+  font-size: 1.5rem;
+}
+.quest-header h3 {
+  color: var(--color-white);
+  font-size: 1.2rem;
+  margin: 0;
+}
+.quest-status {
+  margin-left: auto;
+  padding: 0.2rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.65rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.quest-status.completed {
+  background: #2e7d32;
+  color: white;
+}
+.quest-status.in-progress {
+  background: #f57c00;
+  color: white;
+}
+.quest-desc {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0.5rem 0 1rem;
+}
+.quest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+.quest-tags span {
+  background: #222;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  border: 1px solid #444;
+}
+.quest-play {
+  display: inline-block;
+}
+
+/* ===== MK Overlay ===== */
+.mk-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: mk-fade-in 0.3s ease-out;
+}
+.mk-overlay.active {
+  display: flex;
+}
+.mk-content {
+  text-align: center;
+  animation: mk-shake 0.5s ease-in-out;
+}
+.mk-dragon {
+  font-size: 8rem;
+  filter: drop-shadow(0 0 20px red);
+  transition: transform 0.3s;
+}
+.mk-title {
+  font-family: 'Press Start 2P', cursive;
+  color: red;
+  font-size: 3rem;
+  text-shadow: 0 0 15px red, 0 0 30px darkred;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+.mk-sub {
+  color: goldenrod;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+@keyframes mk-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes mk-shake {
+  0%   { transform: translate(0); }
+  25%  { transform: translate(-5px, 5px); }
+  50%  { transform: translate(5px, -5px); }
+  75%  { transform: translate(-5px, -5px); }
+  100% { transform: translate(0); }
 }
 
 /* ===== Responsive ===== */

@@ -8,10 +8,12 @@
     <title>Gienoviere | Game Dev Portfolio</title>
     <link rel="stylesheet" href="index.css">
     <script src="Main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Animated background container -->
     <div class="bg-animated"></div>
+    <canvas id="particle-canvas"></canvas>
 
     <!-- Overlay content -->
     <div class="page-content">
@@ -68,6 +70,7 @@
                     <img src="images/Student%20Game%20Dev.jpg" alt="Student Game Dev">
                     <img src="images/GD11.png" alt="GD11">
                 </div>
+
                 <div class="about-text">
                     <h1>About Me</h1>
                     <!-- Your bio text goes here -->
@@ -147,12 +150,88 @@
                 </div>
             </section>
 
+            <!-- Featured Projects Section -->
+            <section class="quest-section">
+            <h2>⚔️ Featured Quests</h2>
+            <div class="quest-grid">
+
+                <!-- Card 1: Race Game Pro -->
+                <div class="quest-card">
+                    <div class="quest-header">
+                        <span class="quest-icon">🏎️</span>
+                        <h3>Race Game Pro</h3>
+                        <span class="quest-status completed">Completed</span>
+                    </div>
+                    <p class="quest-desc">Solo class project inspired by Mario Kart and Ford Racing 3. Built with Unity terrain tools and custom C# scripts.</p>
+                    <div class="quest-tags">
+                        <span>Unity</span><span>C#</span><span>Terrain</span>
+                    </div>
+                    <a href="project2.html" class="btn quest-play">▶ Play / View</a>
+                    </div>
+
+                    <!-- Card 2: RPG Game -->
+                    <div class="quest-card">
+                    <div class="quest-header">
+                        <span class="quest-icon">🐉</span>
+                        <h3>RPG Game</h3>
+                        <span class="quest-status in-progress">In Progress</span>
+                    </div>
+                    <p class="quest-desc">Open‑world villain RPG in Unreal Engine 5. Weapons, AI, inventory, and full quest system – inspired by Skyrim & Witcher.</p>
+                    <div class="quest-tags">
+                        <span>UE5</span><span>C++</span><span>Blueprints</span>
+                    </div>
+                    <a href="project3.html" class="btn quest-play">▶ Play / View</a>
+                    </div>
+
+                    <!-- Card 3: Malaga Jam -->
+                    <div class="quest-card">
+                    <div class="quest-header">
+                        <span class="quest-icon">⏳</span>
+                        <h3>MalagaJam</h3>
+                        <span class="quest-status completed">Completed</span>
+                    </div>
+                    <p class="quest-desc">48‑hour game jam with theme “Roots”. AI behaviour, boss enemy, and player controller – all in Unity.</p>
+                    <div class="quest-tags">
+                        <span>Unity</span><span>C#</span><span>AI</span>
+                    </div>
+                    <a href="GameJamMalaga.html" class="btn quest-play">▶ Play / View</a>
+                    </div>
+
+                    <!-- Card 4: 2D Project -->
+                    <div class="quest-card">
+                    <div class="quest-header">
+                        <span class="quest-icon">🎮</span>
+                        <h3>2D Arcade</h3>
+                        <span class="quest-status completed">Completed</span>
+                    </div>
+                    <p class="quest-desc">2‑week arcade challenge. Unity 2D, custom animations, and level design. First step into the 2D world.</p>
+                    <div class="quest-tags">
+                        <span>Unity 2D</span><span>Animator</span><span>Arcade</span>
+                    </div>
+                    <a href="2DProject1.html" class="btn quest-play">▶ Play / View</a>
+                    </div>
+
+                </div>
+            </section>
+
             <!-- Optional other sections (projects, etc.) you'll add later -->
         </main>
+
+        <!-- MK Easter Egg Overlay -->
+        <div id="mk-overlay" class="mk-overlay">
+        <div class="mk-content">
+            <div id="mk-icon" class="mk-dragon">🐉</div>
+            <h1 id="mk-title" class="mk-title">FINISH HIM!</h1>
+            <p id="mk-sub" class="mk-sub">Flawless Victory</p>
+            <button id="mk-close" class="btn">FATALITY (Close)</button>
+        </div>
+        </div>
 
         <footer class="site-footer">
             <p>&copy; 2026 Gienoviere. All rights reserved.</p>
         </footer>
     </div>
+
+
 </body>
 </html>
