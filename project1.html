@@ -33,8 +33,34 @@
       <main>
         <section class="project-grid">
           <div class="project-media">
-            <img src="Running%20Game/RunningGame1.png" alt="Running game screenshot 1" style="width:100%; margin-bottom:1rem;">
-            <img src="Running%20Game/RunningGame2.png" alt="Running game screenshot 2" style="width:100%;">
+            <!-- Image gallery -->
+            <div class="slideshow">
+              <div class="mySlides"><div class="slideshow-number">1 / 10</div><img src="race%20Game%20pictures/Screenshot%20(137).png" alt="Start screen"></div>
+              <div class="mySlides"><div class="slideshow-number">2 / 10</div><img src="race%20Game%20pictures/Racepro4.png" alt="Script testing"></div>
+              <div class="mySlides"><div class="slideshow-number">3 / 10</div><img src="race%20Game%20pictures/Screenshot%20(116).png" alt="Camera positioning"></div>
+              <div class="mySlides"><div class="slideshow-number">4 / 10</div><img src="race%20Game%20pictures/Screenshot%20(118).png" alt="POV mode"></div>
+              <div class="mySlides"><div class="slideshow-number">5 / 10</div><img src="race%20Game%20pictures/Screenshot%20(128).png" alt="Finished track"></div>
+              <div class="mySlides"><div class="slideshow-number">6 / 10</div><img src="race%20Game%20pictures/Screenshot%20(134).png" alt="C# scripts"></div>
+              <div class="mySlides"><div class="slideshow-number">7 / 10</div><img src="race%20Game%20pictures/Screenshot%20(135).png" alt="Score mode"></div>
+              <div class="mySlides"><div class="slideshow-number">8 / 10</div><img src="race%20Game%20pictures/Screenshot%20(136).png" alt="Time attack"></div>
+              <div class="mySlides"><div class="slideshow-number">9 / 10</div><img src="race%20Game%20pictures/Screenshot%20(101)%20copy.png" alt="Terrain design"></div>
+              <div class="mySlides"><div class="slideshow-number">10 / 10</div><img src="" alt=""></div>
+              <a class="slideshow-prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="slideshow-next" onclick="plusSlides(1)">&#10095;</a>
+              <div class="slideshow-caption"><p id="caption"></p></div>
+              <div class="slideshow-thumbnails">
+                <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="race%20Game%20pictures/Screenshot%20(137).png" onclick="currentSlide(1)" alt="Start screen"></div>
+                <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="race%20Game%20pictures/Racepro4.png" onclick="currentSlide(2)" alt="Script testing"></div>
+                <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="race%20Game%20pictures/Screenshot%20(116).png" onclick="currentSlide(3)" alt="Camera positioning"></div>
+                <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="race%20Game%20pictures/Screenshot%20(118).png" onclick="currentSlide(4)" alt="POV mode"></div>
+                <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="race%20Game%20pictures/Screenshot%20(128).png" onclick="currentSlide(5)" alt="Finished track"></div>
+                <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="race%20Game%20pictures/Screenshot%20(134).png" onclick="currentSlide(6)" alt="C# scripts"></div>
+                <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="race%20Game%20pictures/Screenshot%20(135).png" onclick="currentSlide(7)" alt="Score mode"></div>
+                <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="race%20Game%20pictures/Screenshot%20(136).png" onclick="currentSlide(8)" alt="Time attack"></div>
+                <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="race%20Game%20pictures/Screenshot%20(101)%20copy.png" onclick="currentSlide(9)" alt="Terrain design"></div>
+                <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="" onclick="currentSlide(10)" alt=""></div>
+              </div>
+            </div>
           </div>
           <div class="project-info">
             <h2>Running into madness</h2>
@@ -45,7 +71,7 @@
               The project was a success, though it needs a few tweaks.
             </p>
             <video width="100%" controls>
-              <source src="Running%20Game/Endless%20runner%20Game%20-%20MainMenu.mp4" type="video/mp4">
+              <source src="RunningGame/Endless runner Game - MainMenu - Windows, Mac, Linux - Unity 2022.3.4f1 _DX11_ 2023-08-28 15-54-26.mp4" type="video/mp4">
             </video>
             <div style="margin-top:1rem;">
               <a class="btn" href="https://apps.apple.com/us/app/subway-surfers/id512939461">Subway Surfers</a>
