@@ -1,64 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="GameDev portfolio - Running into madness">
-  <meta name="author" content="Gienoviere D">
-  <title>Running into madness | Gienoviere</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>
-  <div class="bg-animated"></div>
-  <div class="page-content">
-    <header class="site-header">
-      <div class="logo"><a href="index.html">Gienoviere</a></div>
-      <nav class="main-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume/GameDev%20resume.pdf">Resume</a></li>
-          <li><a class="active" href="project1.html">Running into madness</a></li>
-          <li><a href="project2.html">Race Game Pro</a></li>
-          <li><a href="project3.html">RPG Game</a></li>
-          <li><a href="GameJamMalaga.html">Game Jams</a></li>
-          <li><a href="Teamproject1.html">Team Projects</a></li>
-          <li><a href="2DProject1.html">2D Projects</a></li>
-          <li><a href="blender.html">Blender</a></li>
-          <li><a href="beats.html">Beat/video</a></li>
-          <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GameDev portfolio - Running into madness">
+    <meta name="author" content="Gienoviere D">
+    <title>Running into madness | Gienoviere</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="bg-animated"></div>
+    <div class="page-content">
+      <header class="site-header">
+        <div class="logo"><a href="index.html">Gienoviere</a></div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume/GameDev%20resume.pdf">Resume</a></li>
+            <li><a class="active" href="project1.html">Running into madness</a></li>
+            <li><a href="project2.html">Race Game Pro</a></li>
+            <li><a href="project3.html">RPG Game</a></li>
+            <li><a href="GameJamMalaga.html">Game Jams</a></li>
+            <li><a href="Teamproject1.html">Team Projects</a></li>
+            <li><a href="2DProject1.html">2D Projects</a></li>
+            <li><a href="blender.html">Blender</a></li>
+            <li><a href="beats.html">Beat/video</a></li>
+            <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <main>
-      <section class="project-grid">
-        <div class="project-media">
-          <img src="Running%20Game/RunningGame1.png" alt="Running game screenshot 1" style="width:100%; margin-bottom:1rem;">
-          <img src="Running%20Game/RunningGame2.png" alt="Running game screenshot 2" style="width:100%;">
-        </div>
-        <div class="project-info">
-          <h2>Running into madness</h2>
-          <p>
-            This game was made as a solo project, inspired by Subway Surfers and Doctor Strange.
-            I built it in Unity in about one week, creating an endlessly generating map using C#.
-            I used some assets and a tutorial, but added my own terrain design.
-            The project was a success, though it needs a few tweaks.
-          </p>
-          <video width="100%" controls>
-            <source src="Running%20Game/Endless%20runner%20Game%20-%20MainMenu.mp4" type="video/mp4">
-          </video>
-          <div style="margin-top:1rem;">
-            <a class="btn" href="https://apps.apple.com/us/app/subway-surfers/id512939461">Subway Surfers</a>
-            <a class="btn" href="https://unity.com/">Unity</a>
-            <a class="btn" href="https://assetstore.unity.com/">Asset Store</a>
+      <main>
+        <section class="project-grid">
+          <div class="project-media">
+            <img src="Running%20Game/RunningGame1.png" alt="Running game screenshot 1" style="width:100%; margin-bottom:1rem;">
+            <img src="Running%20Game/RunningGame2.png" alt="Running game screenshot 2" style="width:100%;">
           </div>
-        </div>
-      </section>
-    </main>
+          <div class="project-info">
+            <h2>Running into madness</h2>
+            <p>
+              This game was made as a solo project, inspired by Subway Surfers and Doctor Strange.
+              I built it in Unity in about one week, creating an endlessly generating map using C#.
+              I used some assets and a tutorial, but added my own terrain design.
+              The project was a success, though it needs a few tweaks.
+            </p>
+            <video width="100%" controls>
+              <source src="Running%20Game/Endless%20runner%20Game%20-%20MainMenu.mp4" type="video/mp4">
+            </video>
+            <div style="margin-top:1rem;">
+              <a class="btn" href="https://apps.apple.com/us/app/subway-surfers/id512939461">Subway Surfers</a>
+              <a class="btn" href="https://unity.com/">Unity</a>
+              <a class="btn" href="https://assetstore.unity.com/">Asset Store</a>
+            </div>
+          </div>
+        </section>
+      </main>
 
-    <footer class="site-footer">
-      <p>&copy; 2026 Gienoviere. All rights reserved.</p>
-    </footer>
-  </div>
-</body>
+      <footer class="site-footer">
+        <p>&copy; 2026 Gienoviere. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+
+  <canvas id="particle-canvas"></canvas>
+  <script>
+    // starfield
+    (() => {
+      const canvas = document.getElementById('particle-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let width, height, particles;
+      function init() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+        particles = Array.from({ length: 80 }, () => ({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          radius: Math.random() * 2 + 1,
+          speedX: (Math.random() - 0.5) * 0.5,
+          speedY: (Math.random() - 0.5) * 0.5,
+          alpha: Math.random() * 0.5 + 0.3
+        }));
+      }
+      function animate() {
+        ctx.clearRect(0, 0, width, height);
+        for (const p of particles) {
+          p.x += p.speedX;
+          p.y += p.speedY;
+          if (p.x > width) p.x = 0;
+          else if (p.x < 0) p.x = width;
+          if (p.y > height) p.y = 0;
+          else if (p.y < 0) p.y = height;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(255, 215, 0, ${p.alpha})`;
+          ctx.fill();
+        }
+        requestAnimationFrame(animate);
+      }
+      window.addEventListener('resize', init);
+      init();
+      animate();
+    })();
+  </script>
 </html>
