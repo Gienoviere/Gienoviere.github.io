@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GameDev portfolio - MalagaJam">
+  <meta name="author" content="Gienoviere D">
+  <title>MalagaJam | Gienoviere</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="p2.js" defer></script>
+</head>
+<body>
+  <div class="bg-animated"></div>
+  <div class="page-content">
+    <header class="site-header">
+      <div class="logo"><a href="index.html">Gienoviere</a></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume/GameDev%20resume.pdf">Resume</a></li>
+          <li><a href="project1.html">Running into madness</a></li>
+          <li><a href="project2.html">Race Game Pro</a></li>
+          <li><a href="project3.html">RPG Game</a></li>
+          <li><a class="active" href="GameJamMalaga.html">Game Jams</a></li>
+          <li><a href="Teamproject1.html">Team Projects</a></li>
+          <li><a href="2DProject1.html">2D Projects</a></li>
+          <li><a href="blender.html">Blender</a></li>
+          <li><a href="beats.html">Beat/video</a></li>
+          <li><a href="https://www.linkedin.com/in/gienoviere-janga-53a0051ab/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="project-grid">
+        <div class="project-media">
+          <div class="slideshow">
+            <div class="mySlides"><div class="slideshow-number">1 / 7</div><img src="Game%20Jams/MalagaSite.png" alt="Jam site"></div>
+            <div class="mySlides"><div class="slideshow-number">2 / 7</div><img src="Game%20Jams/Player.png" alt="Player script"></div>
+            <div class="mySlides"><div class="slideshow-number">3 / 7</div><img src="Game%20Jams/AI.png" alt="AI script"></div>
+            <div class="mySlides"><div class="slideshow-number">4 / 7</div><img src="Game%20Jams/AIBehave.png" alt="AI behaviour"></div>
+            <div class="mySlides"><div class="slideshow-number">5 / 7</div><img src="Game%20Jams/AI%20testing%20Roots.png" alt="AI testing"></div>
+            <div class="mySlides"><div class="slideshow-number">6 / 7</div><img src="Game%20Jams/Making%20BossEnemy.png" alt="Boss enemy"></div>
+            <div class="mySlides"><div class="slideshow-number">7 / 7</div><img src="Game%20Jams/Creating%20Menu%20Roots.png" alt="Menu"></div>
+            <a class="slideshow-prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="slideshow-next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="slideshow-caption"><p id="caption"></p></div>
+            <div class="slideshow-thumbnails">
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="Game%20Jams/MalagaSite.png" onclick="currentSlide(1)" alt="Jam site"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="Game%20Jams/Player.png" onclick="currentSlide(2)" alt="Player script"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="Game%20Jams/AI.png" onclick="currentSlide(3)" alt="AI script"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="Game%20Jams/AIBehave.png" onclick="currentSlide(4)" alt="AI behaviour"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="Game%20Jams/AI%20testing%20Roots.png" onclick="currentSlide(5)" alt="AI testing"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="Game%20Jams/Making%20BossEnemy.png" onclick="currentSlide(6)" alt="Boss enemy"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="Game%20Jams/Creating%20Menu%20Roots.png" onclick="currentSlide(7)" alt="Menu"></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h2>MalagaJam</h2>
+          <p>
+            48-hour game jam with the theme "Roots". I worked on player movement, AI patrolling
+            and detection, a boss enemy, and main menu. Built in Unity with C#.
+          </p>
+          <h3 style="color:var(--color-accent);">Sneak Peek</h3>
+          <video width="100%" controls>
+            <source src="Game%20Jams/Sneakpeak.mp4" type="video/mp4">
+          </video>
+          <h3 style="color:var(--color-accent);">AI Behaviour Test</h3>
+          <video width="100%" controls>
+            <source src="Game%20Jams/AI%20Behave%20Test.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Gienoviere. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
