@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GameDev portfolio - RPG Game">
+  <meta name="author" content="Gienoviere D">
+  <title>RPG Game | Gienoviere</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="p2.js" defer></script>
+</head>
+<body>
+  <div class="bg-animated"></div>
+  <div class="page-content">
+    <header class="site-header">
+      <div class="logo"><a href="index.html">Gienoviere</a></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume/GameDev%20resume.pdf">Resume</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropbtn">Game projects</a>
+                <div class="dropdown-content">
+               <a href="/project1.html">Running into madness</a>
+               <a href="/project2.html">Race Game Pro</a>
+               <a href="/project3.html">RPG Game</a>
+               <a class="active" href="/project4.html">Pac-Man</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Software Engineering Projects</a>
+                <div class="dropdown-content">
+              <a href="/#">Project 1</a>
+              </div>
+            </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Game Jams</a>
+                <div class="dropdown-content">
+              <a href="/GameJamMalaga.html">First Jam</a>
+              <a href="/GameJamMalaga2.html">Second Jam</a>
+            </div>
+          </li>
+           <li class="dropdown">
+                        <a href="#" class="dropbtn">Team Projects</a>
+                        <div class="dropdown-content">
+                            <a href="/Teamproject1.html">Team Project 1</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">2D Projects</a>
+                        <div class="dropdown-content">
+                            <a href="/2DProject1.html">2D Project 1</a>
+                        </div>
+                    </li>
+          <li><a href="blender.html">Blender</a></li>
+          <li><a href="beats.html">Beat/video</a></li>
+          <li class="dropdown social-dropdown">
+            <a href="#" class="dropbtn">Social Media</a>
+              <div class="dropdown-content">
+                <a href="https://twitter.com/G_GameDeveloper">Twitter</a>
+                <a href="https://www.instagram.com/gd.gamedeveloper/">Instagram</a>
+                <a href="https://github.com/Gienoviere">GitHub</a>
+              </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="project-grid">
+        <div class="project-media">
+          <div class="slideshow">
+            <div class="mySlides"><div class="slideshow-number">1 / 8</div><img src="RPG%20UE5/Playfield.png" alt="Start Project"></div>
+            <div class="mySlides"><div class="slideshow-number">2 / 8</div><img src="RPG%20UE5/Keybindings.png" alt="Keybindings"></div>
+            <div class="mySlides"><div class="slideshow-number">3 / 8</div><img src="RPG%20UE5/Weapons.png" alt="Weapons"></div>
+            <div class="mySlides"><div class="slideshow-number">4 / 8</div><img src="RPG%20UE5/PlayerStats.png" alt="Player Stats"></div>
+            <div class="mySlides"><div class="slideshow-number">5 / 8</div><img src="RPG%20UE5/CombatSystem.png" alt="Combat System"></div>
+            <div class="mySlides"><div class="slideshow-number">6 / 8</div><img src="RPG%20UE5/EquipmentSystem.png" alt="Equipment"></div>
+            <div class="mySlides"><div class="slideshow-number">7 / 8</div><img src="RPG%20UE5/AI%20behaviour.png" alt="AI behaviour"></div>
+            <div class="mySlides"><div class="slideshow-number">8 / 8</div><img src="RPG%20UE5/BP.png" alt="Player BP"></div>
+            <a class="slideshow-prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="slideshow-next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="slideshow-caption"><p id="caption"></p></div>
+            <div class="slideshow-thumbnails">
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="RPG%20UE5/Playfield.png" onclick="currentSlide(1)" alt="Start Project"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="RPG%20UE5/Keybindings.png" onclick="currentSlide(2)" alt="Keybindings"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="RPG%20UE5/Weapons.png" onclick="currentSlide(3)" alt="Weapons"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="RPG%20UE5/PlayerStats.png" onclick="currentSlide(4)" alt="Player Stats"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="RPG%20UE5/CombatSystem.png" onclick="currentSlide(5)" alt="Combat System"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="RPG%20UE5/EquipmentSystem.png" onclick="currentSlide(6)" alt="Equipment"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="RPG%20UE5/AI%20behaviour.png" onclick="currentSlide(7)" alt="AI behaviour"></div>
+              <div class="slideshow-thumb-column"><img class="slideshow-thumb" src="RPG%20UE5/BP.png" onclick="currentSlide(8)" alt="Player BP"></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h2>Pac man</h2>
+          <p>
+            This is an pacman game I made with Unity. I used C# to code the game and make it work. The game is a 2D game where you control pacman and eat the dots while avoiding the ghosts. The game has a score system and a timer. The game also has a pause menu and a restart button. The game is still in development and I will be adding more features to it in the future. I made this in four weeks and I learned a lot about designing and Object Oriented programming while making this game. I also learned about game design and how to make a game fun and challenging. I hope you enjoy playing it!
+          </p>
+          <video width="100%" controls>
+            <source src="RPG%20UE5/RPG%20-%20Unreal%20Editor%202023-08-29%2011-59-04.mp4" type="video/mp4">
+          </video>
+          <div>
+            <a class="btn" href="https://www.youtube.com/playlist?list=PLVcVWC1bK3YV1y98Wa_DSv3ZzhDiQh480">Tutorial RPG UE5</a>
+            <a class="btn" href="https://www.unrealengine.com/en-US/">Unreal Engine</a>
+            <a class="btn" href="https://www.unrealengine.com/marketplace/en-US/store">Marketplace</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Gienoviere. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+
+<canvas id="particle-canvas"></canvas>
+<script>
+  // starfield
+  (() => {
+    const canvas = document.getElementById('particle-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let width, height, particles;
+    function init() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+      particles = Array.from({ length: 80 }, () => ({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        radius: Math.random() * 2 + 1,
+        speedX: (Math.random() - 0.5) * 0.5,
+        speedY: (Math.random() - 0.5) * 0.5,
+        alpha: Math.random() * 0.5 + 0.3
+      }));
+    }
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+      for (const p of particles) {
+        p.x += p.speedX;
+        p.y += p.speedY;
+        if (p.x > width) p.x = 0;
+        else if (p.x < 0) p.x = width;
+        if (p.y > height) p.y = 0;
+        else if (p.y < 0) p.y = height;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 215, 0, ${p.alpha})`;
+        ctx.fill();
+      }
+      requestAnimationFrame(animate);
+    }
+    window.addEventListener('resize', init);
+    init();
+    animate();
+  })();
+</script>
+
+</html>
